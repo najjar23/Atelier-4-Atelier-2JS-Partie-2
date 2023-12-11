@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inscription</title>
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+  <h1>Inscription</h1>
+  <form id="inscriptionForm">
+    <div>
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" required>
+      <span id="nomError" style="color: red;"></span>
+    </div>
+    <div>
+      <label for="prenom">Prénom :</label>
+      <input type="text" id="prenom" required>
+      <span id="prenomError" style="color: red;"></span>
+    </div>
+    <div>
+      <label for="dateNaissance">Date de naissance :</label>
+      <input type="text" id="dateNaissance" required>
+      <span id="dateNaissanceError" style="color: red;"></span>
+    </div>
+    <div>
+      <label for="numeroTelephone">Numéro de téléphone :</label>
+      <input type="tel" id="numeroTelephone" required>
+      <span id="numeroTelephoneError" style="color: red;"></span>
+    </div>
+    <div>
+      <label for="email">Email :</label>
+      <input type="email" id="email" required>
+      <span id="emailError" style="color: red;"></span>
+    </div>
+    <div>
+      <label for="password1">Mot de passe :</label>
+      <input type="password" id="password1" required>
+    </div>
+    <div>
+      <label for="password2">Confirmer le mot de passe :</label>
+      <input type="password" id="password2" required>
+      <span id="passwordError" style="color: red;"></span>
+    </div>
+    <button type="submit">S'inscrire</button>
+  </form>
+  <script src="inscription.js"></script>
+</body>
+</html>
